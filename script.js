@@ -38,6 +38,33 @@ function configureLink(link, destination) {
   }
 }
 
+function setupMarquee() {
+  const marquee = document.querySelector('.marquee');
+  const primaryGroup = document.querySelector('.marquee-group');
+  const duplicateGroup = document.querySelector('.marquee-group[aria-hidden="true"]');
+  const seed = primaryGroup?.querySelector('.marquee-item');
+  if (!marquee || !primaryGroup || !duplicateGroup || !seed) return;
+
+  const makeItem = () => seed.cloneNode(true);
+  const fillTrack = () => {
+    primaryGroup.replaceChildren(makeItem());
+    const minimumWidth = marquee.clientWidth + primaryGroup.scrollWidth;
+    while (primaryGroup.scrollWidth < minimumWidth) primaryGroup.append(makeItem());
+    duplicateGroup.replaceChildren(...[...primaryGroup.children].map(item => item.cloneNode(true)));
+  };
+
+  let frame;
+  const queueFill = () => {
+    cancelAnimationFrame(frame);
+    frame = requestAnimationFrame(fillTrack);
+  };
+
+  queueFill();
+  if ('ResizeObserver' in window) new ResizeObserver(queueFill).observe(marquee);
+  else window.addEventListener('resize', queueFill, { passive: true });
+  document.fonts?.ready.then(queueFill);
+}
+
 async function renderSchedule() {
   const list = document.querySelector('#schedule-list');
   if (!list) return;
@@ -67,7 +94,7 @@ async function renderSchedule() {
       if (item.Link?.trim()) {
         const link = document.createElement('a');
         link.className = 'row-link';
-        link.textContent = '↗';
+        link.textContent = '→';
         link.setAttribute('aria-label', `Open link for ${item.Title}`);
         configureLink(link, item.Link.trim());
         article.append(link);
@@ -132,7 +159,7 @@ async function renderQuestion() {
       submit.className = 'button button-dark submission-link';
       submit.append(document.createTextNode(question.link_text?.trim() || 'Link'));
       const arrow = document.createElement('span');
-      arrow.textContent = '↗';
+      arrow.textContent = '→';
       submit.append(arrow);
       configureLink(submit, question.Link.trim());
       card.append(submit);
@@ -189,7 +216,7 @@ function renderPastQuestions(questions) {
     if (question.Link?.trim()) {
       const link = document.createElement('a');
       link.className = 'archive-link';
-      link.textContent = `${question.link_text?.trim() || 'Link'} ↗`;
+      link.textContent = `${question.link_text?.trim() || 'Link'} →`;
       configureLink(link, question.Link.trim());
       article.append(link);
     }
@@ -209,8 +236,10 @@ document.querySelector('#past-questions-toggle')?.addEventListener('click', even
 
 renderSchedule();
 renderQuestion();
+setupMarquee();
 
 document.querySelector('.teams-button')?.addEventListener('click', async event => {
+  const button = event.currentTarget;
   const code = 'vqfd07z';
   const toast = document.querySelector('.toast');
   try {
@@ -226,10 +255,10 @@ document.querySelector('.teams-button')?.addEventListener('click', async event =
     document.execCommand('copy');
     temporaryInput.remove();
   }
-  event.currentTarget.querySelector('b').textContent = 'Copied!';
+  button.querySelector('b').textContent = 'Copied!';
   toast?.classList.add('show');
   window.setTimeout(() => {
-    event.currentTarget.querySelector('b').textContent = code;
+    button.querySelector('b').textContent = code;
     toast?.classList.remove('show');
   }, 2200);
 });

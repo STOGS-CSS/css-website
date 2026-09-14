@@ -28,7 +28,7 @@ function createPdfLink(edition, className) {
   link.href = edition.PDF.trim();
   link.target = '_blank';
   link.rel = 'noopener';
-  link.textContent = 'Read PDF ↗';
+  link.textContent = 'Read PDF →';
   return link;
 }
 
