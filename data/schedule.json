@@ -1,0 +1,34 @@
+{
+  "listings": [
+    {
+      "Date": "15",
+      "Month": "SEP",
+      "Day": "Monday",
+      "Time": "13:00",
+      "Title": "Welcome back!",
+      "Host": "CSS Committee",
+      "Description": "Meet the team, pitch an idea, and get the year started.",
+      "Link": ""
+    },
+    {
+      "Date": "22",
+      "Month": "SEP",
+      "Day": "Monday",
+      "Time": "13:00",
+      "Title": "Build lab",
+      "Host": "Project Team",
+      "Description": "A session for projects at every stage — blank page included.",
+      "Link": ""
+    },
+    {
+      "Date": "29",
+      "Month": "SEP",
+      "Day": "Monday",
+      "Time": "13:00",
+      "Title": "QOTW live",
+      "Host": "Challenge Team",
+      "Description": "Take on the latest question together. Fast thinkers welcome.",
+      "Link": "qotw.html"
+    }
+  ]
+}

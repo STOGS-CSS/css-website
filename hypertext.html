@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HYPERTEXT, the publication of the St. Olave's Computer Science Society.">
+  <title>Hypertext — Olaves CSS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="top" class="site-header">
+    <a class="brand" href="index.html"><img src="Assets/Logo.svg" alt="St. Olave's Computer Science Society"></a>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="schedule.html">Schedule</a><a href="hypertext.html" aria-current="page">Hypertext</a><a href="qotw.html">QOTW</a><a href="hall-of-fame.html">Hall of Fame</a></nav>
+    <a class="header-cta" href="index.html#join">Join us <span>↗</span></a><button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false"><i></i><i></i></button>
+  </header>
+
+  <main class="hypertext-main">
+    <section class="hyper-hero" aria-labelledby="hypertext-label">
+      <p id="hypertext-label" class="section-index">THE CSS PUBLICATION</p>
+      <h1 class="sr-only">Hypertext</h1>
+      <div class="hyper-motif" role="img" aria-label="hypertext"><span>h</span><span>y</span><span>p</span><span>e</span><span>r</span><span>t</span><span>e</span><span>x</span><span>t</span></div>
+      <p class="hyper-tagline">A student-made publication for ideas worth following.</p>
+    </section>
+
+    <section class="latest-section section-wrap" aria-labelledby="latest-heading">
+      <div class="edition-heading"><p id="latest-heading" class="section-index">LATEST EDITION</p><p>Fresh from HYPERTEXT.</p></div>
+      <article id="latest-edition" class="latest-edition" aria-live="polite"><p class="data-status">Loading latest edition…</p></article>
+    </section>
+
+    <section class="past-editions section-wrap" aria-labelledby="past-editions-heading">
+      <div class="edition-heading"><p id="past-editions-heading" class="section-index">PAST EDITIONS</p><p>Browse the archive.</p></div>
+      <div id="past-editions-list" class="editions-list" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="footer-name" href="index.html">OLAVES <span>CSS</span></a><p>Words for the curious.<br>Edited by CSS students.</p><a href="#top" class="back-top">BACK TO TOP ↑</a></footer>
+  <script src="script.js"></script><script src="hypertext.js"></script>
+</body>
+</html>

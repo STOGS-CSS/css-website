@@ -1,0 +1,84 @@
+{
+  "questions": [
+    {
+      "QOTW": 1,
+      "Title_Regular": "Search",
+      "Title_special": "smarter.",
+      "Question": "How many times does a binary search compare values in the worst case when searching a sorted list of 1,024 items?",
+      "Hint": "Halve it, then halve it again.",
+      "Submission Instructions": "Submit your reasoning using the link below.",
+      "Link": "",
+      "link_text": ""
+    },
+    {
+      "QOTW": 2,
+      "Title_Regular": "Find the",
+      "Title_special": "shortest path.",
+      "Question": "Design an algorithm that finds the shortest route through a weighted network. Explain why your approach always finds the best available route.",
+      "Hint": "Think about which unexplored node should be visited next.",
+      "Submission Instructions": "Bring your solution to Monday's session or submit it using the link when one is provided.",
+      "Link": "",
+      "link_text": ""
+    },
+    {
+      "QOTW": 3,
+      "Title_Regular": "Sort the",
+      "Title_special": "mess.",
+      "Question": "Compare merge sort and insertion sort. When might each algorithm be the better choice?",
+      "Hint": "Consider input size and whether the data is already nearly ordered.",
+      "Submission Instructions": "Submit your comparison using the link below.",
+      "Link": "",
+      "link_text": ""
+    },
+    {
+      "QOTW": 4,
+      "Title_Regular": "Stack up",
+      "Title_special": "the clues.",
+      "Question": "How could a stack be used to check whether a string contains balanced parentheses, brackets, and braces?",
+      "Hint": "The most recently opened symbol must be closed first.",
+      "Submission Instructions": "Share your algorithm at the next session or submit it using the link when one is provided.",
+      "Link": "",
+      "link_text": ""
+    },
+    {
+      "QOTW": 5,
+      "Title_Regular": "Build a",
+      "Title_special": "better queue.",
+      "Question": "Design a queue using two stacks and explain why removing an item can still be efficient.",
+      "Hint": "Move items between the stacks only when necessary.",
+      "Submission Instructions": "Submit your reasoning using the link below.",
+      "Link": "",
+      "link_text": ""
+    },
+    {
+      "QOTW": 6,
+      "Title_Regular": "Map the",
+      "Title_special": "connections.",
+      "Question": "Describe a breadth-first search that finds the minimum number of connections between two people in a network.",
+      "Hint": "Visit all nodes at the current distance before moving farther away.",
+      "Submission Instructions": "Bring your solution to Monday's session or submit it using the link when one is provided.",
+      "Link": "",
+      "link_text": ""
+    },
+    {
+      "QOTW": 7,
+      "Title_Regular": "Count the",
+      "Title_special": "possibilities.",
+      "Question": "How many different three-character passwords can be made from the letters A, B, C, and D if repetition is allowed? Explain your method.",
+      "Hint": "Each position has the same number of choices.",
+      "Submission Instructions": "Submit your reasoning using the link below.",
+      "Link": "",
+      "link_text": ""
+    },
+    {
+      "QOTW": 8,
+      "Title_Regular": "Protect the",
+      "Title_special": "data.",
+      "Question": "Explain how hashing can help a program quickly determine whether an item has already been seen.",
+      "Hint": "Think about turning a value into an index.",
+      "Submission Instructions": "Share your explanation at the next session or submit it using the link when one is provided.",
+      "Link": "linktest.com",
+      "link_text": "Link Text Test"
+    }
+  ]
+}

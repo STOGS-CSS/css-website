@@ -1,0 +1,49 @@
+{
+  "editions": [
+    {
+      "Edition": 5,
+      "Title": "Edition 5",
+      "Published": "I have no clue man",
+      "Description": "This is the fifth edition of HYPERTEXT.",
+      "Contents": ["A bunch of articles i guess","also a lot of cheese maybe","and some other stuff"],
+      "PDF": "Assets/Hypertext/HYPERTEXT Issue 5.pdf",
+      "Image": ""
+    },
+    {
+      "Edition": 4,
+      "Title": "Edition 4",
+      "Published": "",
+      "Description": "",
+      "Contents": [],
+      "PDF": "Assets/Hypertext/HYPERTEXT Issue 4.pdf",
+      "Image": ""
+    },
+    {
+      "Edition": 3,
+      "Title": "Edition 3",
+      "Published": "",
+      "Description": "",
+      "Contents": [],
+      "PDF": "Assets/Hypertext/HYPERTEXT Issue 3.pdf",
+      "Image": ""
+    },
+    {
+      "Edition": 2,
+      "Title": "Edition 2",
+      "Published": "",
+      "Description": "",
+      "Contents": [],
+      "PDF": "Assets/Hypertext/HYPERTEXT Issue 2.pdf",
+      "Image": ""
+    },
+    {
+      "Edition": 1,
+      "Title": "Edition 1",
+      "Published": "",
+      "Description": "",
+      "Contents": [],
+      "PDF": "Assets/Hypertext/HYPERTEXT Issue 1.pdf",
+      "Image": ""
+    }
+  ]
+}
