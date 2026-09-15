@@ -1,8 +1,15 @@
 # St. Olave's Computer Science Society
 
+<!-- WHY ARE YOU TOUCHING THE README?? BE CAREFUL!! -->
+<!-- WHY ARE YOU TOUCHING THE README?? BE CAREFUL!! -->
+<!-- WHY ARE YOU TOUCHING THE README?? BE CAREFUL!! -->
+
 A responsive, static website for the St. Olave's Grammar School Computer Science Society (CSS). It is designed to be uploaded directly to GitHub Pages or any static web host: there is no build process, framework, package manager, or server-side code.
 
 The site uses semantic HTML5, vanilla CSS, and vanilla JavaScript. Content that changes regularly is held in small JSON files so that it can be updated without editing the page layout or JavaScript.
+
+> [!TIP]
+> Stuck or unsure? Read this `README.md`! It will explain almost everything you need to know.
 
 ## Pages
 
@@ -56,7 +63,8 @@ Then open [http://localhost:8000](http://localhost:8000) in a browser. Stop the 
 3. Choose **Deploy from a branch**, then select the branch containing the site (usually `main`) and the `/ (root)` folder.
 4. Save. GitHub will provide the public site address after the deployment completes.
 
-No build command is needed. GitHub Pages serves the HTML, CSS, JavaScript, JSON, SVG, images, and PDFs as static files.
+> [!IMPORTANT]
+> No build command is needed. GitHub Pages serves the HTML, CSS, JavaScript, JSON, SVG, images, and PDFs as static files. This Repository should already be linked to the domain. You should not need to publish via a new GitHub Page.
 
 ## Updating regular content
 

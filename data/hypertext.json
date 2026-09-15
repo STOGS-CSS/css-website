@@ -3,17 +3,17 @@
     {
       "Edition": 5,
       "Title": "Edition 5",
-      "Published": "I have no clue man",
-      "Description": "This is the fifth edition of HYPERTEXT.",
-      "Contents": ["A bunch of articles i guess","also a lot of cheese maybe","and some other stuff"],
+      "Published": "March 2026",
+      "Description": "This is the fifth edition of HYPERTEXT. Special Edition! Celebrating 10 years of CSS.",
+      "Contents": ["Presdicency Team Accounts","Student-written articles across 2 years and 2 different societies (ML Soc. + CSS)","Easter Egg Hunt! (now expired, fun to complete!)"],
       "PDF": "Assets/Hypertext/HYPERTEXT Issue 5.pdf",
       "Image": ""
     },
     {
       "Edition": 4,
       "Title": "Edition 4",
-      "Published": "",
-      "Description": "",
+      "Published": "April 2023",
+      "Description": "The fourth edition of HYPERTEXT. This is where modern HYPERTEXT begins.",
       "Contents": [],
       "PDF": "Assets/Hypertext/HYPERTEXT Issue 4.pdf",
       "Image": ""
@@ -21,8 +21,8 @@
     {
       "Edition": 3,
       "Title": "Edition 3",
-      "Published": "",
-      "Description": "",
+      "Published": "March 2022",
+      "Description": "The third edition of HYPERTEXT. This edition is a bit more polished than the previous editions, and contains a lot of interesting articles.",
       "Contents": [],
       "PDF": "Assets/Hypertext/HYPERTEXT Issue 3.pdf",
       "Image": ""
@@ -30,8 +30,8 @@
     {
       "Edition": 2,
       "Title": "Edition 2",
-      "Published": "",
-      "Description": "",
+      "Published": "December 2020",
+      "Description": "The second edition of HYPERTEXT.",
       "Contents": [],
       "PDF": "Assets/Hypertext/HYPERTEXT Issue 2.pdf",
       "Image": ""
@@ -39,8 +39,8 @@
     {
       "Edition": 1,
       "Title": "Edition 1",
-      "Published": "",
-      "Description": "",
+      "Published": "July 2020",
+      "Description": "The first ever edition of HYPERTEXT. Not much is known about this edition.",
       "Contents": [],
       "PDF": "Assets/Hypertext/HYPERTEXT Issue 1.pdf",
       "Image": ""
