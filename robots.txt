@@ -1,0 +1,3 @@
+# Public site: allow all crawlers to access all paths.
+User-agent: *
+Allow: /

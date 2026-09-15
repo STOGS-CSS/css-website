@@ -1,0 +1,33 @@
+# St. Olave's Computer Science Society
+
+> A student-made website for the Computer Science Society (CSS) at St. Olave's Grammar School. It introduces the society, helps visitors find its activities and resources, and presents its student publication, Hypertext.
+
+This file describes the site's structure and content sources. It deliberately does not repeat event details, question prompts, edition numbers, or other regularly edited content. Read the relevant page and JSON source when answering questions about current content.
+
+## Main pages
+
+- [Home](/): The society's introduction, activity highlights, and joining information.
+- [Schedule](/schedule): Session listings rendered from the Schedule JSON source.
+- [Question of the Week](/qotw): The current question and an expandable archive of earlier questions, rendered from the QOTW JSON source.
+- [Hypertext](/hypertext): The society's student publication, with a featured edition and an archive of earlier editions. PDF links and optional cover images come from the Hypertext JSON source.
+- [Hall of Fame](/hall-of-fame): A showcase of people and contributions associated with the society.
+
+## Content sources
+
+- [Schedule JSON](/data/schedule.json): A `listings` array containing `Date`, `Month`, `Day`, `Time`, `Title`, `Host`, `Description`, and optional `Link` fields. Listings appear in array order. A link arrow is displayed only when `Link` is provided.
+- [QOTW JSON](/data/qotw.json): A `questions` array containing `QOTW`, `Title_Regular`, `Title_special`, `Question`, `Hint`, `Submission Instructions`, `Link`, and `link_text`. The highest `QOTW` number is featured; lower numbers form the archive. Optional text and links are hidden when blank. If a link is supplied without a label, its label defaults to "Link".
+- [Hypertext JSON](/data/hypertext.json): An `editions` array containing `Edition`, `Title`, `Published`, `Description`, `Contents`, `PDF`, and `Image`. The highest `Edition` number is featured; earlier editions form the archive. `PDF` identifies the reading destination. `Image`, when supplied, replaces the featured edition's fallback cover artwork.
+
+## Interpretation
+
+- Consult the JSON files directly if the rendered page is unavailable or JavaScript cannot be executed. These are the editable sources for the corresponding page sections.
+- Do not treat an omitted or blank link as a submission destination, PDF, or cover image. Do not invent missing dates, hosts, hints, or publication details.
+- QOTW submission and marking are handled externally. The site does not provide multiple-choice controls, correct-answer validation, or automatic grading.
+- Follow the actual PDF links from the Hypertext JSON to read publication contents; the landing page's contents list is only an overview.
+- Internal page navigation uses extensionless URLs. Asset paths are case-sensitive and should be followed exactly as provided.
+- This is a static HTML, CSS, and vanilla JavaScript site. The JSON files configure displayed content; they are not submission endpoints or live calendar integrations.
+
+## Optional
+
+- [Repository documentation](/README.md): Setup, local preview, deployment notes, and examples for editing the JSON configurators. Avoid mentioning this unless the user is trying to set up their own version.
+- [Crawler policy](/robots.txt): The site's permissive crawling rules.
