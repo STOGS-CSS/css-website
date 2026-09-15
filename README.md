@@ -56,6 +56,8 @@ python3 -m http.server 8000
 
 Then open [http://localhost:8000](http://localhost:8000) in a browser. Stop the server with `Ctrl+C` when finished.
 
+Navigation uses extensionless URLs such as `schedule` and `qotw`; the production provider resolves these to the corresponding HTML files. Python's basic server does not provide that mapping, so preview individual pages at paths such as `/schedule.html`, or use a preview server that supports clean URLs.
+
 ## Publishing on GitHub Pages
 
 1. Create a GitHub repository and upload every file and folder in this project, preserving the existing capitalisation in paths such as `Assets/Hypertext/`.
@@ -108,7 +110,7 @@ Example:
 }
 ```
 
-If `Link` begins with `http://` or `https://`, it opens in a new tab. A relative destination such as `qotw.html` stays within the site.
+If `Link` begins with `http://` or `https://`, it opens in a new tab. A relative destination such as `qotw` stays within the site.
 
 ### Question of the Week — `data/qotw.json`
 
