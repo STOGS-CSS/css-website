@@ -26,7 +26,7 @@ function setDataError(container) {
   container.replaceChildren();
   const message = document.createElement('p');
   message.className = 'data-status data-error';
-  message.textContent = 'This content could not be loaded. If you opened the HTML file directly, preview the site through a local web server.';
+  message.textContent = 'This content could not be loaded. If you opened the HTML file directly, preview the site through a local web server!!!';
   container.append(message);
 }
 
