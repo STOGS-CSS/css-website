@@ -1,24 +1,43 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Question of the Week — Olaves CSS</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Bitcount+Single:wght@400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question of the Week — Olaves CSS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Bitcount+Single:wght@400&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header id="top" class="site-header">
     <a class="brand" href="./"><img src="Assets/Logo.svg" alt="St. Olave's Computer Science Society"></a>
-    <nav class="desktop-nav" aria-label="Main navigation"><a href="./">Home</a><a href="schedule">Schedule</a><a href="hypertext">Hypertext</a><a href="qotw" aria-current="page">QOTW</a><a href="hall-of-fame">Hall of Fame</a></nav>
-    <a class="header-cta" href="./#join">Join us <span>→</span></a><button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false"><i></i><i></i></button>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="./">Home</a><a href="schedule">Schedule</a><a
+        href="hypertext">Hypertext</a><a href="qotw" aria-current="page">QOTW</a><a href="hall-of-fame">Hall of Fame</a>
+    </nav>
+    <a class="header-cta" href="./#join">Join us <span>→</span></a><button class="menu-button" type="button"
+      aria-label="Open navigation" aria-expanded="false"><i></i><i></i></button>
   </header>
   <main class="qotw-main">
-    <section id="qotw-card" class="question-card" aria-live="polite"><p class="data-status">Loading this week's question…</p></section>
+    <section id="qotw-card" class="question-card" aria-live="polite">
+      <p class="data-status">Loading this week's question…</p>
+    </section>
     <section class="qotw-archive" aria-labelledby="past-questions-heading">
-      <button id="past-questions-toggle" class="past-toggle" type="button" aria-expanded="false" aria-controls="past-questions">
+      <button id="past-questions-toggle" class="past-toggle" type="button" aria-expanded="false"
+        aria-controls="past-questions">
         <span id="past-questions-heading">View past questions</span><b>↓</b>
       </button>
       <div id="past-questions" class="past-questions" hidden></div>
     </section>
   </main>
-  <footer class="site-footer"><p>New puzzle every week.<br>Bring your answer to IT1.</p><a href="schedule" class="back-top">VIEW SCHEDULE →</a></footer>
+  <footer class="site-footer">
+    <p>New puzzle every week.<br>Bring your answer to IT1.</p><a href="schedule" class="back-top">VIEW SCHEDULE →</a>
+  </footer>
   <script src="script.js"></script>
-</body></html>
+</body>
+
+</html>
